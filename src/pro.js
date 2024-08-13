@@ -77,10 +77,10 @@ function proxy(req, res) {
                 'accept-encoding': 'gzip, deflate, br',
                 'accept-language': 'en-US,en;q=0.5',
             },
-            timeout: 10000,
-            maxRedirects: 5,
+            timeout: 3000,
+            maxRedirects: 1,
             encoding: null,
-            strictSSL: false,
+            strictSSL: true,
             gzip: true,
             jar: true,
         }, (err, origin, buffer) => {
