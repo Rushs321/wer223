@@ -1,5 +1,5 @@
 const sharp = require('sharp');
-const redirect = require('./redirect');
+const redirect = require('./rrd');
 
 function compress(req, res, input) {
   const format = req.params.webp ? 'webp' : 'jpeg';

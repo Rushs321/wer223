@@ -4,7 +4,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-const proxy = require('./src/proxy');
+const proxy = require('./src/pro');
 
 const PORT = process.env.PORT || 8080;
 
@@ -25,7 +25,7 @@ app.get('/favicon.ico', (req, res) => {
 app.enable('trust proxy');
 
 // Route with proxy functionality
-app.get('/', proxy);
+app.get('/', pro);
 
 // Start the server
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

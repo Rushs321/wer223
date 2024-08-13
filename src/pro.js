@@ -1,11 +1,11 @@
 const request = require('request');
 const { pick } = require('lodash'); // Import pick from lodash
 const { generateRandomIP, randomUserAgent } = require('./utils'); 
-const copyHeaders = require('./copyHeaders');
-const compress = require('./compress');
-const bypass = require('./bypass');
-const redirect = require('./redirect');
-const shouldCompress = require('./shouldCompress');
+const copyHeaders = require('./copyh');
+const compress = require('./comp');
+const bypass = require('./bb');
+const redirect = require('./rrd');
+const shouldCompress = require('./scomp');
 
 
 // Array of predefined Via header values
