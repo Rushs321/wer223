@@ -1,7 +1,7 @@
 const request = require('request');
 const { pick } = require('lodash'); // Import pick from lodash
 const { generateRandomIP, randomUserAgent } = require('./utils'); 
-const copyHeaders = require('./copyh');
+const copyHeaders = require('./coph');
 const compress = require('./comp');
 const bypass = require('./bb');
 const redirect = require('./rrd');
