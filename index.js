@@ -25,7 +25,7 @@ app.get('/favicon.ico', (req, res) => {
 app.enable('trust proxy');
 
 // Route with proxy functionality
-app.get('/', pro);
+app.get('/', proxy);
 
 // Start the server
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
